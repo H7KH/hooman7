@@ -61,3 +61,24 @@ p {
     line-height: 2.8rem;
   }
 }
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 4px;
+  transition: margin 300ms ease;
+}
+
+.link-arrow:hover::after {
+  margin-left: 12px;
+}
