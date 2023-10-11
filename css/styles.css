@@ -812,3 +812,30 @@ a {
   max-width: 480px;
   margin: 0 auto;
 }
+
+/* Features */
+
+.block-features .grid {
+  margin: 8rem 0;
+  gap: 4rem 8rem;
+}
+
+.block-features .media {
+  flex-direction: column;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.block-features .media__body {
+  margin: 2rem 0;
+}
+
+.block-features .feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .grid__feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
