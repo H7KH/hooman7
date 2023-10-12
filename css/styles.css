@@ -272,6 +272,12 @@ a {
   padding-right: 6rem;
 }
 
+@media screen and (max-width: 768px) {
+  .btn .icon {
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.6rem;
@@ -304,6 +310,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.6rem 1.6rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -539,6 +546,10 @@ a {
   position: absolute;
   top: 20px;
   right: -32px;
+}
+
+.testimonial .quote {
+  margin: 2rem 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -795,6 +806,16 @@ a {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 480px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .block-domain .btn {
+    font-size: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -803,6 +824,10 @@ a {
 }
 
 /* Pricing */
+
+.block-pricing {
+  padding-top: 0;
+}
 
 .block-pricing .grid {
   gap: 8rem 4rem;
@@ -915,6 +940,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding: 10rem;
+  }
+
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
@@ -944,4 +973,10 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* Callout Signup */
+
+.callout-signup {
+  transform: translateY(5rem);
 }
